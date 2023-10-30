@@ -1,0 +1,5 @@
+bitsandbytes
+transformers
+sentencepiece
+accelerate
+gradio

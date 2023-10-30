@@ -1,0 +1,83 @@
+2023-10-05 01:34:45 | INFO | gradio_web_server | args: Namespace(host='0.0.0.0', port=None, controller_url='http://localhost:10000', concurrency_count=8, model_list_mode='reload', share=False, moderate=False, embed=False)
+2023-10-05 01:34:45 | INFO | gradio_web_server | Models: ['llava-llama-2-13b-chat-lightning-preview']
+2023-10-05 01:34:45 | INFO | gradio_web_server | Namespace(host='0.0.0.0', port=None, controller_url='http://localhost:10000', concurrency_count=8, model_list_mode='reload', share=False, moderate=False, embed=False)
+2023-10-05 01:34:45 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:325: GradioUnusedKwargWarning: You have unused kwarg parameters in Textbox, please remove them: {'editable': False, 'scrollbars': True}
+2023-10-05 01:34:45 | ERROR | stderr |   contextbox = gr.Textbox(
+2023-10-05 01:34:45 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:328: GradioUnusedKwargWarning: You have unused kwarg parameters in Textbox, please remove them: {'editable': False, 'scrollbars': True}
+2023-10-05 01:34:45 | ERROR | stderr |   audiobox = gr.Textbox(
+2023-10-05 01:34:45 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:373: GradioUnusedKwargWarning: You have unused kwarg parameters in Column, please remove them: {'min_height': 250}
+2023-10-05 01:34:45 | ERROR | stderr |   with gr.Column(scale=4, min_width=70, min_height=250):
+2023-10-05 01:34:45 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:374: GradioUnusedKwargWarning: You have unused kwarg parameters in Row, please remove them: {'scale': 1}
+2023-10-05 01:34:45 | ERROR | stderr |   with gr.Row(scale=1):
+2023-10-05 01:34:45 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:376: GradioUnusedKwargWarning: You have unused kwarg parameters in Row, please remove them: {'scale': 1}
+2023-10-05 01:34:45 | ERROR | stderr |   with gr.Row(scale=1):
+2023-10-05 01:34:45 | INFO | stdout | Running on local URL:  http://0.0.0.0:7860
+2023-10-05 01:34:45 | INFO | botocore.credentials | Found credentials from IAM Role: AWSApplicationMigrationLaunchInstanceWithSsmRole
+2023-10-05 01:34:45 | INFO | botocore.credentials | Found credentials from IAM Role: AWSApplicationMigrationLaunchInstanceWithSsmRole
+2023-10-05 01:34:45 | INFO | stdout | 
+2023-10-05 01:34:45 | INFO | stdout | To create a public link, set `share=True` in `launch()`.
+2023-10-05 01:34:52 | INFO | stdout | Keyboard interruption in main thread... closing server.
+2023-10-05 01:35:00 | INFO | stdout | Keyboard interruption in main thread... closing server.
+2023-10-05 01:35:28 | INFO | gradio_web_server | args: Namespace(host='0.0.0.0', port=None, controller_url='http://localhost:10000', concurrency_count=8, model_list_mode='reload', share=False, moderate=False, embed=False)
+2023-10-05 01:35:28 | INFO | gradio_web_server | Models: ['llava-llama-2-13b-chat-lightning-preview']
+2023-10-05 01:35:28 | INFO | gradio_web_server | Namespace(host='0.0.0.0', port=None, controller_url='http://localhost:10000', concurrency_count=8, model_list_mode='reload', share=False, moderate=False, embed=False)
+2023-10-05 01:35:28 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:325: GradioUnusedKwargWarning: You have unused kwarg parameters in Textbox, please remove them: {'editable': False, 'scrollbars': True}
+2023-10-05 01:35:28 | ERROR | stderr |   contextbox = gr.Textbox(
+2023-10-05 01:35:28 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:328: GradioUnusedKwargWarning: You have unused kwarg parameters in Textbox, please remove them: {'editable': False, 'scrollbars': True}
+2023-10-05 01:35:28 | ERROR | stderr |   audiobox = gr.Textbox(
+2023-10-05 01:35:28 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:373: GradioUnusedKwargWarning: You have unused kwarg parameters in Column, please remove them: {'min_height': 250}
+2023-10-05 01:35:28 | ERROR | stderr |   with gr.Column(scale=4, min_width=70, min_height=250):
+2023-10-05 01:35:28 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:374: GradioUnusedKwargWarning: You have unused kwarg parameters in Row, please remove them: {'scale': 1}
+2023-10-05 01:35:28 | ERROR | stderr |   with gr.Row(scale=1):
+2023-10-05 01:35:28 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:376: GradioUnusedKwargWarning: You have unused kwarg parameters in Row, please remove them: {'scale': 1}
+2023-10-05 01:35:28 | ERROR | stderr |   with gr.Row(scale=1):
+2023-10-05 01:35:29 | INFO | stdout | Running on local URL:  http://0.0.0.0:7860
+2023-10-05 01:35:29 | INFO | botocore.credentials | Found credentials from IAM Role: AWSApplicationMigrationLaunchInstanceWithSsmRole
+2023-10-05 01:35:29 | INFO | botocore.credentials | Found credentials from IAM Role: AWSApplicationMigrationLaunchInstanceWithSsmRole
+2023-10-05 01:35:29 | INFO | stdout | 
+2023-10-05 01:35:29 | INFO | stdout | To create a public link, set `share=True` in `launch()`.
+2023-10-05 01:36:32 | INFO | gradio_web_server | load_demo. ip: 34.202.182.173
+2023-10-05 01:36:32 | INFO | gradio_web_server | Models: ['llava-llama-2-13b-chat-lightning-preview']
+2023-10-05 01:36:40 | INFO | gradio_web_server | add_text. ip: 34.202.182.173. len: 33
+2023-10-05 01:36:41 | INFO | gradio_web_server | http_bot. ip: 34.202.182.173
+2023-10-05 01:36:41 | INFO | gradio_web_server | model_name: llava-llama-2-13b-chat-lightning-preview, worker_addr: http://localhost:40000
+2023-10-05 01:36:41 | INFO | gradio_web_server | {"Key:images\n\t: ValueList of 1 images: ['b939abf2c4553ce07e642170aee3a3d7']\n\tType:<class 'str'>", "Key:stop\n\t: Value</s>\n\tType:<class 'str'>", "Key:prompt\n\t: Value[INST] <<SYS>>\nYou are a helpful language and vision assistant. You are able to understand the visual content that the user provides, and assist the user with a variety of tasks using natural language.\n<</SYS>>\n\n<image>\nWhat is unusual about this image? [/INST]\n\tType:<class 'str'>", "Key:top_p\n\t: Value0.7\n\tType:<class 'float'>", "Key:max_new_tokens\n\t: Value512\n\tType:<class 'int'>", "Key:temperature\n\t: Value0.2\n\tType:<class 'float'>", "Key:model\n\t: Valuellava-llama-2-13b-chat-lightning-preview\n\tType:<class 'str'>"}
+2023-10-05 01:36:41 | INFO | gradio_web_server | ==== request ====
+{'model': 'llava-llama-2-13b-chat-lightning-preview', 'prompt': '[INST] <<SYS>>\nYou are a helpful language and vision assistant. You are able to understand the visual content that the user provides, and assist the user with a variety of tasks using natural language.\n<</SYS>>\n\n<image>\nWhat is unusual about this image? [/INST]', 'temperature': 0.2, 'top_p': 0.7, 'max_new_tokens': 512, 'stop': '</s>', 'images': "List of 1 images: ['b939abf2c4553ce07e642170aee3a3d7']"}
+2023-10-05 01:36:56 | INFO | gradio_web_server | The unusual aspect of this image is the man sitting on top of a clothes dryer, which is placed on the back of a car. This is not a common sight, as clothes dryers are typically indoor appliances used for drying clothes, and they are not meant to be transported on the back of a car. The man's unusual position and the presence of the clothes dryer on the car create a unique and unexpected scene in the image.
+2023-10-05 01:37:42 | INFO | gradio_web_server | add_text. ip: 34.202.182.173. len: 33
+2023-10-05 01:37:43 | INFO | gradio_web_server | http_bot. ip: 34.202.182.173
+2023-10-05 01:37:43 | INFO | gradio_web_server | model_name: llava-llama-2-13b-chat-lightning-preview, worker_addr: http://localhost:40000
+2023-10-05 01:37:43 | INFO | gradio_web_server | {"Key:images\n\t: ValueList of 1 images: ['b939abf2c4553ce07e642170aee3a3d7']\n\tType:<class 'str'>", "Key:stop\n\t: Value</s>\n\tType:<class 'str'>", "Key:prompt\n\t: Value[INST] <<SYS>>\nYou are a helpful language and vision assistant. You are able to understand the visual content that the user provides, and assist the user with a variety of tasks using natural language.\n<</SYS>>\n\n<image>\nWhat is unusual about this image? [/INST]\n\tType:<class 'str'>", "Key:top_p\n\t: Value0.7\n\tType:<class 'float'>", "Key:temperature\n\t: Value0.9\n\tType:<class 'float'>", "Key:max_new_tokens\n\t: Value512\n\tType:<class 'int'>", "Key:model\n\t: Valuellava-llama-2-13b-chat-lightning-preview\n\tType:<class 'str'>"}
+2023-10-05 01:37:43 | INFO | gradio_web_server | ==== request ====
+{'model': 'llava-llama-2-13b-chat-lightning-preview', 'prompt': '[INST] <<SYS>>\nYou are a helpful language and vision assistant. You are able to understand the visual content that the user provides, and assist the user with a variety of tasks using natural language.\n<</SYS>>\n\n<image>\nWhat is unusual about this image? [/INST]', 'temperature': 0.9, 'top_p': 0.7, 'max_new_tokens': 512, 'stop': '</s>', 'images': "List of 1 images: ['b939abf2c4553ce07e642170aee3a3d7']"}
+2023-10-05 01:37:53 | INFO | gradio_web_server | The unusual aspect of this image is the man sitting on top of a washing machine while it is being loaded onto a car. This is not a common sight, as washing machines are typically placed inside homes or laundromats and not transported in this manner. Additionally, the man is wearing a bright yellow shirt, which makes him stand out in the image. The scene takes place on a busy city street, with a yellow taxi cab nearby, adding to the unconventional nature of the scene.
+2023-10-05 12:28:23 | INFO | gradio_web_server | args: Namespace(host='0.0.0.0', port=None, controller_url='http://localhost:10000', concurrency_count=8, model_list_mode='reload', share=False, moderate=False, embed=False)
+2023-10-05 12:28:23 | INFO | gradio_web_server | Models: ['llava-llama-2-13b-chat-lightning-preview']
+2023-10-05 12:28:23 | INFO | gradio_web_server | Namespace(host='0.0.0.0', port=None, controller_url='http://localhost:10000', concurrency_count=8, model_list_mode='reload', share=False, moderate=False, embed=False)
+2023-10-05 12:28:23 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:325: GradioUnusedKwargWarning: You have unused kwarg parameters in Textbox, please remove them: {'editable': False, 'scrollbars': True}
+2023-10-05 12:28:23 | ERROR | stderr |   contextbox = gr.Textbox(
+2023-10-05 12:28:23 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:328: GradioUnusedKwargWarning: You have unused kwarg parameters in Textbox, please remove them: {'editable': False, 'scrollbars': True}
+2023-10-05 12:28:23 | ERROR | stderr |   audiobox = gr.Textbox(
+2023-10-05 12:28:23 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:373: GradioUnusedKwargWarning: You have unused kwarg parameters in Column, please remove them: {'min_height': 250}
+2023-10-05 12:28:23 | ERROR | stderr |   with gr.Column(scale=4, min_width=70, min_height=250):
+2023-10-05 12:28:23 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:374: GradioUnusedKwargWarning: You have unused kwarg parameters in Row, please remove them: {'scale': 1}
+2023-10-05 12:28:23 | ERROR | stderr |   with gr.Row(scale=1):
+2023-10-05 12:28:23 | ERROR | stderr | /1/vision-matt/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:376: GradioUnusedKwargWarning: You have unused kwarg parameters in Row, please remove them: {'scale': 1}
+2023-10-05 12:28:23 | ERROR | stderr |   with gr.Row(scale=1):
+2023-10-05 12:28:23 | INFO | stdout | Running on local URL:  http://0.0.0.0:7860
+2023-10-05 12:28:23 | INFO | botocore.credentials | Found credentials from IAM Role: AWSApplicationMigrationLaunchInstanceWithSsmRole
+2023-10-05 12:28:23 | INFO | botocore.credentials | Found credentials from IAM Role: AWSApplicationMigrationLaunchInstanceWithSsmRole
+2023-10-05 12:28:23 | INFO | stdout | 
+2023-10-05 12:28:23 | INFO | stdout | To create a public link, set `share=True` in `launch()`.
+2023-10-06 00:41:18 | INFO | gradio_web_server | load_demo. ip: 34.202.182.173
+2023-10-06 00:41:18 | INFO | gradio_web_server | Models: ['llava-llama-2-13b-chat-lightning-preview']
+2023-10-06 00:41:27 | INFO | gradio_web_server | load_demo. ip: 34.202.182.173
+2023-10-06 00:41:27 | INFO | gradio_web_server | Models: ['llava-llama-2-13b-chat-lightning-preview']
+2023-10-06 00:41:49 | INFO | gradio_web_server | add_text. ip: 34.202.182.173. len: 19
+2023-10-06 00:41:49 | INFO | gradio_web_server | http_bot. ip: 34.202.182.173
+2023-10-06 00:41:49 | INFO | gradio_web_server | model_name: llava-llama-2-13b-chat-lightning-preview, worker_addr: http://localhost:40000
+2023-10-06 00:41:50 | INFO | gradio_web_server | {"Key:temperature\n\t: Value0.2\n\tType:<class 'float'>", "Key:model\n\t: Valuellava-llama-2-13b-chat-lightning-preview\n\tType:<class 'str'>", "Key:top_p\n\t: Value0.7\n\tType:<class 'float'>", "Key:images\n\t: ValueList of 1 images: ['6d00fd62cceb5febd8e4e2d7a561a3e6']\n\tType:<class 'str'>", "Key:stop\n\t: Value</s>\n\tType:<class 'str'>", "Key:prompt\n\t: Value[INST] <<SYS>>\nYou are a helpful language and vision assistant. You are able to understand the visual content that the user provides, and assist the user with a variety of tasks using natural language.\n<</SYS>>\n\n<image>\ndesscribe the image [/INST]\n\tType:<class 'str'>", "Key:max_new_tokens\n\t: Value512\n\tType:<class 'int'>"}
+2023-10-06 00:41:50 | INFO | gradio_web_server | ==== request ====
+{'model': 'llava-llama-2-13b-chat-lightning-preview', 'prompt': '[INST] <<SYS>>\nYou are a helpful language and vision assistant. You are able to understand the visual content that the user provides, and assist the user with a variety of tasks using natural language.\n<</SYS>>\n\n<image>\ndesscribe the image [/INST]', 'temperature': 0.2, 'top_p': 0.7, 'max_new_tokens': 512, 'stop': '</s>', 'images': "List of 1 images: ['6d00fd62cceb5febd8e4e2d7a561a3e6']"}
+2023-10-06 00:41:57 | INFO | gradio_web_server | The image shows a large bookshelf filled with numerous books, which are organized neatly on the shelves. The bookshelf is located in a room, possibly a living room or a library, and it is situated next to a window. The books on the shelves are of various sizes and colors, indicating a diverse collection of literature.
