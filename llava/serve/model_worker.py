@@ -238,7 +238,8 @@ async def generate_stream(request: Request):
     params = await request.json()
 
     if model_semaphore is None:
-        model_semaphore = asyncio.Semaphore(args.limit_model_concurrency)
+        model_semaphore = asyncio.Semaphore(
+            args.limit_model_concurrency)
     await model_semaphore.acquire()
     worker.send_heart_beat()
     generator = worker.generate_stream_gate(params)

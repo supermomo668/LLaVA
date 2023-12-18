@@ -8,6 +8,10 @@ import gradio as gr
 import requests
 from ..putils.print import print_pload
 
+from fastapi import FastAPI, Request, BackgroundTasks
+from fastapi.responses import StreamingResponse
+import requests
+
 from llava.conversation import (default_conversation, conv_templates,
                                    SeparatorStyle)
 from llava.constants import LOGDIR
@@ -20,9 +24,9 @@ logger = build_logger("gradio_web_server", "gradio_web_server.log")
 
 headers = {"User-Agent": "EmPBot:: Client"}
 
-# no_change_btn = gr.Button.update()
-# enable_btn = gr.Button.update(interactive=True)
-# disable_btn = gr.Button.update(interactive=False)
+no_change_btn = gr.Button.update()
+enable_btn = gr.Button.update(interactive=True)
+disable_btn = gr.Button.update(interactive=False)
 
 priority = {
     "vicuna-13b": "aaaaaaa",
@@ -123,7 +127,8 @@ def clear_history(request: gr.Request):
     state = default_conversation.copy()
     return (state, state.to_gradio_chatbot(), "", None) + (disable_btn,) * 5
 
-def add_text(state, text, image, image_process_mode, request: gr.Request):
+def add_text(
+    state, text, image, image_process_mode, request: gr.Request):
     """
     First processing function of the inputs from UI elements
     """
@@ -292,10 +297,16 @@ def http_bot(
         }
         fout.write(json.dumps(data) + "\n")
 
-def build_demo(embed_mode):
+def build_app(args=None, model_list):
     """
     Define & initialize UI states, interactions 
     """
+    app = FastAPI()
+
+    # Worker Endpoint
+    @app.post("/recommend")
+    async def generate_stream(request: Request):
+        
     # urlbox = gr.Textbox(
     #     show_label=False, placeholder="Enter your URL and press ENTER", 
     #     visible=True, container=False)
@@ -428,6 +439,7 @@ if __name__ == "__main__":
 
     logger.info(args)
     
+    # build_app(args, models)
     # demo = build_demo(args.embed)
     # demo.queue(
     #     concurrency_count=args.concurrency_count, status_update_rate=15,

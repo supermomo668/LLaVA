@@ -70,9 +70,9 @@ def format_and_get_images(input_pil_images, return_pil=False,image_process_mode=
                 images.append(img_b64_str)
     return images
 
-
-
-def prompt_llava(prompt_message,images,model_name="llava-llama-2-13b-chat-lightning-preview",max_new_tokens=300):
+def prompt_llava(
+    prompt_message,images,model_name="llava-llama-2-13b-chat-lightning-preview",max_new_tokens=300
+    ):
     conv = default_conversation.copy()
     conv.append_message(conv.roles[0], prompt_message)
     prompt = conv.get_prompt()
@@ -86,8 +86,8 @@ def prompt_llava(prompt_message,images,model_name="llava-llama-2-13b-chat-lightn
         "stop": conv.sep,
         "images": images
     }
-    response = requests.post(worker_addr + "/worker_generate_stream", headers=headers,
-            json=pload, stream=True)
+    response = requests.post(
+        worker_addr + "/worker_generate_stream", headers=headers,json=pload, stream=True)
 
     print(prompt.replace(conv.sep, "\n"), end="")
     final_output=""

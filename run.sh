@@ -1,8 +1,8 @@
 Help(){
   echo "Instructions to start Llava APIs without the web server. Activate your virtual environment with required packages first."
 }
-cd LLaVA
-default_start_cmd="cd $PWD && conda activate vision-cap"
+env_name="dl"
+default_start_cmd="cd $PWD && conda activate env_name"
 start_cmd="${1:-$default_start_cmd}"
 model="${2:-'liuhaotian/llava-llama-2-13b-chat-lightning-preview'}"
 

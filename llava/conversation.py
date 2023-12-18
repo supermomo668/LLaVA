@@ -372,7 +372,7 @@ conv_llava_v1_mmtag = Conversation(
 )
 conv_ezout_v0 = Conversation(
     system="A chat between a curious human and an artificial intelligence assistant in a grocery shop "
-           "The assistant gives helpful, concise, and polite suggestions to the human based on what the person already obtained and what other items are recommended choices. ",
+           "The assistant gives helpful, concise, and polite recommendation to the human in the shop based on the preference ",
     roles=("Human", "Assistant"),
     messages=(
         # Prompt template from a human and an assistant point of view.
