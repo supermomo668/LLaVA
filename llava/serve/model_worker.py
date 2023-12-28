@@ -229,7 +229,6 @@ def release_model_semaphore(fn=None):
     if fn is not None:
         fn()
 
-
 # Worker Endpoint
 @app.post("/worker_generate_stream")
 async def generate_stream(request: Request):

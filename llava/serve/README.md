@@ -98,11 +98,14 @@ In [llava.gradio_web_server.py](gradio_web_server.py)
   )
   ```
 
-In [llava.conversation.py](../conversation.py) provides
+In [llava.conversation.py](../conversation.py) provides 
+  
+  * ```to_gradio_chatbot```:  KEY processing function of Input Payload
+  * the base prompts for initializing and connecting between prompts.
 
-* ``to_gradio_chatbot``:  KEY processing function of Input Payload
-* the base prompts for initializing and connecting between prompts.
-
+# Development [current development]
+The API service handler is exposed at [`gradio_web_api.py`](gradio_web_api.py)
+  
 # Key Doc Reference
 
 - [Block and Event listners](https://www.gradio.app/main/guides/blocks-and-event-listeners)

@@ -370,14 +370,16 @@ conv_llava_v1_mmtag = Conversation(
     sep2="</s>",
     version="v1_mmtag",
 )
+
+# Custom template
 conv_ezout_v0 = Conversation(
-    system="A chat between a curious human and an artificial intelligence assistant in a grocery shop "
+    system="A chat between a curious human and an artificial intelligence assistant in a retail grocery shop"
            "The assistant gives helpful, concise, and polite recommendation to the human in the shop based on the preference ",
     roles=("Human", "Assistant"),
     messages=(
         # Prompt template from a human and an assistant point of view.
         ("Human", 
-         "It's an average day in an American grocery store that focuses on fresh produce, given the best recommendation of combination of items you can provide, while providing some examples of food you can create."),
+         "In a American grocery store with ample amount of fresh produce, provide a personalized recommendation of items you can provide guided by examples of food you can create."),
         ("Assistant",
          "you can create some delicious meals with a variety of ingredients available. For a hearty breakfast, consider picking up eggs, whole-grain bread, and fresh vegetables to make a nutritious omelet."
          "Lunch options could include deli meats and cheeses for sandwiches, along with a side of mixed greens or a ready-made salad kit. For dinner, you might want to grab some boneless chicken breasts or salmon fillets, along with rice or pasta, and a selection of your favorite sauces or seasonings."
