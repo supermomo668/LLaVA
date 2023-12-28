@@ -1,5 +1,7 @@
 bitsandbytes
-transformers
+transformers==4.34.1
 sentencepiece
 accelerate
 gradio
+fastapi
+uvicorn

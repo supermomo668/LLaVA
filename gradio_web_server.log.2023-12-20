@@ -1,0 +1,140 @@
+2023-12-20 05:14:20 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/button.py:89: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Button(...)` instead of `return gr.Button.update(...)`.
+2023-12-20 05:14:20 | ERROR | stderr |   warnings.warn(
+2023-12-20 05:14:20 | INFO | gradio_web_server | args: Namespace(host='0.0.0.0', port=None, controller_url='http://localhost:10000', concurrency_count=8, model_list_mode='reload', share=False, moderate=False, embed=False)
+2023-12-20 05:14:20 | ERROR | stderr | Traceback (most recent call last):
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/urllib3/connection.py", line 169, in _new_conn
+2023-12-20 05:14:20 | ERROR | stderr |     conn = connection.create_connection(
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/urllib3/util/connection.py", line 96, in create_connection
+2023-12-20 05:14:20 | ERROR | stderr |     raise err
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/urllib3/util/connection.py", line 86, in create_connection
+2023-12-20 05:14:20 | ERROR | stderr |     sock.connect(sa)
+2023-12-20 05:14:20 | ERROR | stderr | ConnectionRefusedError: [Errno 111] Connection refused
+2023-12-20 05:14:20 | ERROR | stderr | 
+2023-12-20 05:14:20 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2023-12-20 05:14:20 | ERROR | stderr | 
+2023-12-20 05:14:20 | ERROR | stderr | Traceback (most recent call last):
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+2023-12-20 05:14:20 | ERROR | stderr |     httplib_response = self._make_request(
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+2023-12-20 05:14:20 | ERROR | stderr |     conn.request(method, url, **httplib_request_kw)
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/urllib3/connection.py", line 234, in request
+2023-12-20 05:14:20 | ERROR | stderr |     super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/http/client.py", line 1283, in request
+2023-12-20 05:14:20 | ERROR | stderr |     self._send_request(method, url, body, headers, encode_chunked)
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/http/client.py", line 1329, in _send_request
+2023-12-20 05:14:20 | ERROR | stderr |     self.endheaders(body, encode_chunked=encode_chunked)
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/http/client.py", line 1278, in endheaders
+2023-12-20 05:14:20 | ERROR | stderr |     self._send_output(message_body, encode_chunked=encode_chunked)
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/http/client.py", line 1038, in _send_output
+2023-12-20 05:14:20 | ERROR | stderr |     self.send(msg)
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/http/client.py", line 976, in send
+2023-12-20 05:14:20 | ERROR | stderr |     self.connect()
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/urllib3/connection.py", line 200, in connect
+2023-12-20 05:14:20 | ERROR | stderr |     conn = self._new_conn()
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/urllib3/connection.py", line 181, in _new_conn
+2023-12-20 05:14:20 | ERROR | stderr |     raise NewConnectionError(
+2023-12-20 05:14:20 | ERROR | stderr | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f8534b2f370>: Failed to establish a new connection: [Errno 111] Connection refused
+2023-12-20 05:14:20 | ERROR | stderr | 
+2023-12-20 05:14:20 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2023-12-20 05:14:20 | ERROR | stderr | 
+2023-12-20 05:14:20 | ERROR | stderr | Traceback (most recent call last):
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/requests/adapters.py", line 439, in send
+2023-12-20 05:14:20 | ERROR | stderr |     resp = conn.urlopen(
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+2023-12-20 05:14:20 | ERROR | stderr |     retries = retries.increment(
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/urllib3/util/retry.py", line 573, in increment
+2023-12-20 05:14:20 | ERROR | stderr |     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+2023-12-20 05:14:20 | ERROR | stderr | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=10000): Max retries exceeded with url: /refresh_all_workers (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8534b2f370>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2023-12-20 05:14:20 | ERROR | stderr | 
+2023-12-20 05:14:20 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2023-12-20 05:14:20 | ERROR | stderr | 
+2023-12-20 05:14:20 | ERROR | stderr | Traceback (most recent call last):
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+2023-12-20 05:14:20 | ERROR | stderr |     return _run_code(code, main_globals, None,
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/runpy.py", line 86, in _run_code
+2023-12-20 05:14:20 | ERROR | stderr |     exec(code, run_globals)
+2023-12-20 05:14:20 | ERROR | stderr |   File "/root/projects/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py", line 477, in <module>
+2023-12-20 05:14:20 | ERROR | stderr |     models = get_model_list()
+2023-12-20 05:14:20 | ERROR | stderr |   File "/root/projects/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py", line 40, in get_model_list
+2023-12-20 05:14:20 | ERROR | stderr |     ret = requests.post(args.controller_url + "/refresh_all_workers")
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/requests/api.py", line 119, in post
+2023-12-20 05:14:20 | ERROR | stderr |     return request('post', url, data=data, json=json, **kwargs)
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/requests/api.py", line 61, in request
+2023-12-20 05:14:20 | ERROR | stderr |     return session.request(method=method, url=url, **kwargs)
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/requests/sessions.py", line 542, in request
+2023-12-20 05:14:20 | ERROR | stderr |     resp = self.send(prep, **send_kwargs)
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/requests/sessions.py", line 655, in send
+2023-12-20 05:14:20 | ERROR | stderr |     r = adapter.send(request, **kwargs)
+2023-12-20 05:14:20 | ERROR | stderr |   File "/opt/conda/envs/dl/lib/python3.10/site-packages/requests/adapters.py", line 516, in send
+2023-12-20 05:14:20 | ERROR | stderr |     raise ConnectionError(e, request=request)
+2023-12-20 05:14:20 | ERROR | stderr | requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=10000): Max retries exceeded with url: /refresh_all_workers (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8534b2f370>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2023-12-20 05:16:17 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/button.py:89: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Button(...)` instead of `return gr.Button.update(...)`.
+2023-12-20 05:16:17 | ERROR | stderr |   warnings.warn(
+2023-12-20 05:16:17 | INFO | gradio_web_server | args: Namespace(host='0.0.0.0', port=None, controller_url='http://localhost:10000', concurrency_count=8, model_list_mode='reload', share=False, moderate=False, embed=False)
+2023-12-20 05:16:17 | INFO | gradio_web_server | Models: []
+2023-12-20 05:16:17 | INFO | gradio_web_server | Namespace(host='0.0.0.0', port=None, controller_url='http://localhost:10000', concurrency_count=8, model_list_mode='reload', share=False, moderate=False, embed=False)
+2023-12-20 05:16:17 | ERROR | stderr | /root/projects/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:349: GradioUnusedKwargWarning: You have unused kwarg parameters in Textbox, please remove them: {'editable': False, 'scrollbars': True}
+2023-12-20 05:16:17 | ERROR | stderr |   contextbox = gr.Textbox(
+2023-12-20 05:16:17 | ERROR | stderr | /root/projects/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:352: GradioUnusedKwargWarning: You have unused kwarg parameters in Textbox, please remove them: {'editable': False, 'scrollbars': True}
+2023-12-20 05:16:17 | ERROR | stderr |   audiobox = gr.Textbox(
+2023-12-20 05:16:17 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/dropdown.py:231: UserWarning: The value passed into gr.Dropdown() is not in the list of choices. Please update the list of choices to include:  or set allow_custom_value=True.
+2023-12-20 05:16:17 | ERROR | stderr |   warnings.warn(
+2023-12-20 05:16:17 | ERROR | stderr | /root/projects/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:398: GradioUnusedKwargWarning: You have unused kwarg parameters in Column, please remove them: {'min_height': 250}
+2023-12-20 05:16:17 | ERROR | stderr |   with gr.Column(scale=4, min_width=70, min_height=250):
+2023-12-20 05:16:17 | ERROR | stderr | /root/projects/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:399: GradioUnusedKwargWarning: You have unused kwarg parameters in Row, please remove them: {'scale': 1}
+2023-12-20 05:16:17 | ERROR | stderr |   with gr.Row(scale=1):
+2023-12-20 05:16:17 | ERROR | stderr | /root/projects/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:401: GradioUnusedKwargWarning: You have unused kwarg parameters in Row, please remove them: {'scale': 1}
+2023-12-20 05:16:17 | ERROR | stderr |   with gr.Row(scale=1):
+2023-12-20 05:16:17 | INFO | stdout | Running on local URL:  http://0.0.0.0:7860
+2023-12-20 05:16:17 | INFO | botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2023-12-20 05:16:17 | INFO | botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2023-12-20 05:16:18 | INFO | stdout | 
+2023-12-20 05:16:18 | INFO | stdout | To create a public link, set `share=True` in `launch()`.
+2023-12-20 05:16:36 | INFO | gradio_web_server | load_demo. ip: 127.0.0.1
+2023-12-20 05:16:36 | INFO | gradio_web_server | Models: []
+2023-12-20 05:16:36 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/dropdown.py:176: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Dropdown(...)` instead of `return gr.Dropdown.update(...)`.
+2023-12-20 05:16:36 | ERROR | stderr |   warnings.warn(
+2023-12-20 05:16:36 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/chatbot.py:161: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Chatbot(...)` instead of `return gr.Chatbot.update(...)`.
+2023-12-20 05:16:36 | ERROR | stderr |   warnings.warn(
+2023-12-20 05:16:36 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/textbox.py:163: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Textbox(...)` instead of `return gr.Textbox.update(...)`.
+2023-12-20 05:16:36 | ERROR | stderr |   warnings.warn(
+2023-12-20 05:16:36 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/button.py:89: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Button(...)` instead of `return gr.Button.update(...)`.
+2023-12-20 05:16:36 | ERROR | stderr |   warnings.warn(
+2023-12-20 05:16:36 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/dropdown.py:231: UserWarning: The value passed into gr.Dropdown() is not in the list of choices. Please update the list of choices to include:  or set allow_custom_value=True.
+2023-12-20 05:16:36 | ERROR | stderr |   warnings.warn(
+2023-12-20 05:16:36 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/asyncio/runners.py:44: GradioUnusedKwargWarning: You have unused kwarg parameters in Textbox, please remove them: {'editable': False, 'scrollbars': True}
+2023-12-20 05:16:36 | ERROR | stderr |   return loop.run_until_complete(main)
+2023-12-20 05:17:04 | INFO | gradio_web_server | add_text. ip: 127.0.0.1. len: 33
+2023-12-20 05:17:04 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/asyncio/runners.py:44: GradioUnusedKwargWarning: You have unused kwarg parameters in Button, please remove them: {'mode': 'static'}
+2023-12-20 05:17:04 | ERROR | stderr |   return loop.run_until_complete(main)
+2023-12-20 05:17:04 | INFO | gradio_web_server | http_bot. ip: 127.0.0.1
+2023-12-20 05:17:04 | INFO | gradio_web_server | model_name: , worker_addr: 
+2023-12-20 05:17:04 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/asyncio/runners.py:44: GradioUnusedKwargWarning: You have unused kwarg parameters in Button, please remove them: {'mode': 'dynamic'}
+2023-12-20 05:17:04 | ERROR | stderr |   return loop.run_until_complete(main)
+2023-12-20 05:17:07 | INFO | gradio_web_server | add_text. ip: 127.0.0.1. len: 0
+2023-12-20 05:17:07 | INFO | gradio_web_server | http_bot. ip: 127.0.0.1
+2023-12-20 05:17:21 | INFO | gradio_web_server | load_demo. ip: 127.0.0.1
+2023-12-20 05:17:21 | INFO | gradio_web_server | Models: []
+2023-12-20 05:17:21 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/dropdown.py:176: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Dropdown(...)` instead of `return gr.Dropdown.update(...)`.
+2023-12-20 05:17:21 | ERROR | stderr |   warnings.warn(
+2023-12-20 05:17:21 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/chatbot.py:161: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Chatbot(...)` instead of `return gr.Chatbot.update(...)`.
+2023-12-20 05:17:21 | ERROR | stderr |   warnings.warn(
+2023-12-20 05:17:21 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/textbox.py:163: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Textbox(...)` instead of `return gr.Textbox.update(...)`.
+2023-12-20 05:17:21 | ERROR | stderr |   warnings.warn(
+2023-12-20 05:17:21 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/button.py:89: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Button(...)` instead of `return gr.Button.update(...)`.
+2023-12-20 05:17:21 | ERROR | stderr |   warnings.warn(
+2023-12-20 05:17:21 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/dropdown.py:231: UserWarning: The value passed into gr.Dropdown() is not in the list of choices. Please update the list of choices to include:  or set allow_custom_value=True.
+2023-12-20 05:17:21 | ERROR | stderr |   warnings.warn(
+2023-12-20 05:17:21 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/asyncio/runners.py:44: GradioUnusedKwargWarning: You have unused kwarg parameters in Textbox, please remove them: {'editable': False, 'scrollbars': True}
+2023-12-20 05:17:21 | ERROR | stderr |   return loop.run_until_complete(main)
+2023-12-20 05:17:26 | INFO | gradio_web_server | add_text. ip: 127.0.0.1. len: 33
+2023-12-20 05:17:26 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/asyncio/runners.py:44: GradioUnusedKwargWarning: You have unused kwarg parameters in Button, please remove them: {'mode': 'static'}
+2023-12-20 05:17:26 | ERROR | stderr |   return loop.run_until_complete(main)
+2023-12-20 05:17:27 | INFO | gradio_web_server | http_bot. ip: 127.0.0.1
+2023-12-20 05:17:27 | INFO | gradio_web_server | model_name: , worker_addr: 
+2023-12-20 05:17:27 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/asyncio/runners.py:44: GradioUnusedKwargWarning: You have unused kwarg parameters in Button, please remove them: {'mode': 'dynamic'}
+2023-12-20 05:17:27 | ERROR | stderr |   return loop.run_until_complete(main)
+2023-12-20 05:23:59 | INFO | gradio_web_server | add_text. ip: 127.0.0.1. len: 0
+2023-12-20 05:24:00 | INFO | gradio_web_server | http_bot. ip: 127.0.0.1
+2023-12-20 05:24:12 | INFO | stdout | Keyboard interruption in main thread... closing server.
+2023-12-20 05:24:26 | INFO | stdout | Keyboard interruption in main thread... closing server.

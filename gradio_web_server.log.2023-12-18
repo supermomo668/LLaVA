@@ -1,0 +1,58 @@
+2023-12-17 21:04:12 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/button.py:89: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Button(...)` instead of `return gr.Button.update(...)`.
+2023-12-17 21:04:12 | ERROR | stderr |   warnings.warn(
+2023-12-17 21:04:12 | INFO | gradio_web_server | args: Namespace(host='0.0.0.0', port=None, controller_url='http://localhost:10000', concurrency_count=8, model_list_mode='reload', share=False, moderate=False, embed=False)
+2023-12-17 21:04:12 | INFO | gradio_web_server | Models: []
+2023-12-17 21:04:12 | INFO | gradio_web_server | Namespace(host='0.0.0.0', port=None, controller_url='http://localhost:10000', concurrency_count=8, model_list_mode='reload', share=False, moderate=False, embed=False)
+2023-12-17 21:04:12 | ERROR | stderr | /root/projects/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:349: GradioUnusedKwargWarning: You have unused kwarg parameters in Textbox, please remove them: {'editable': False, 'scrollbars': True}
+2023-12-17 21:04:12 | ERROR | stderr |   contextbox = gr.Textbox(
+2023-12-17 21:04:12 | ERROR | stderr | /root/projects/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:352: GradioUnusedKwargWarning: You have unused kwarg parameters in Textbox, please remove them: {'editable': False, 'scrollbars': True}
+2023-12-17 21:04:12 | ERROR | stderr |   audiobox = gr.Textbox(
+2023-12-17 21:04:12 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/dropdown.py:231: UserWarning: The value passed into gr.Dropdown() is not in the list of choices. Please update the list of choices to include:  or set allow_custom_value=True.
+2023-12-17 21:04:12 | ERROR | stderr |   warnings.warn(
+2023-12-17 21:04:12 | ERROR | stderr | /root/projects/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:398: GradioUnusedKwargWarning: You have unused kwarg parameters in Column, please remove them: {'min_height': 250}
+2023-12-17 21:04:12 | ERROR | stderr |   with gr.Column(scale=4, min_width=70, min_height=250):
+2023-12-17 21:04:12 | ERROR | stderr | /root/projects/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:399: GradioUnusedKwargWarning: You have unused kwarg parameters in Row, please remove them: {'scale': 1}
+2023-12-17 21:04:12 | ERROR | stderr |   with gr.Row(scale=1):
+2023-12-17 21:04:12 | ERROR | stderr | /root/projects/Video-Visual-Conversational-Assistant/LLaVA/llava/serve/gradio_web_server.py:401: GradioUnusedKwargWarning: You have unused kwarg parameters in Row, please remove them: {'scale': 1}
+2023-12-17 21:04:12 | ERROR | stderr |   with gr.Row(scale=1):
+2023-12-17 21:04:12 | INFO | stdout | Running on local URL:  http://0.0.0.0:7860
+2023-12-17 21:04:12 | INFO | botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2023-12-17 21:04:12 | INFO | botocore.credentials | Found credentials in shared credentials file: ~/.aws/credentials
+2023-12-17 21:04:13 | INFO | stdout | 
+2023-12-17 21:04:13 | INFO | stdout | To create a public link, set `share=True` in `launch()`.
+2023-12-17 21:20:30 | INFO | gradio_web_server | load_demo. ip: 127.0.0.1
+2023-12-17 21:20:30 | INFO | gradio_web_server | Models: ['llava-llama-2-13b-chat-lightning-preview']
+2023-12-17 21:20:30 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/dropdown.py:176: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Dropdown(...)` instead of `return gr.Dropdown.update(...)`.
+2023-12-17 21:20:30 | ERROR | stderr |   warnings.warn(
+2023-12-17 21:20:30 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/chatbot.py:161: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Chatbot(...)` instead of `return gr.Chatbot.update(...)`.
+2023-12-17 21:20:30 | ERROR | stderr |   warnings.warn(
+2023-12-17 21:20:30 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/textbox.py:163: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Textbox(...)` instead of `return gr.Textbox.update(...)`.
+2023-12-17 21:20:30 | ERROR | stderr |   warnings.warn(
+2023-12-17 21:20:30 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/site-packages/gradio/components/button.py:89: UserWarning: Using the update method is deprecated. Simply return a new object instead, e.g. `return gr.Button(...)` instead of `return gr.Button.update(...)`.
+2023-12-17 21:20:30 | ERROR | stderr |   warnings.warn(
+2023-12-17 21:20:30 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/asyncio/runners.py:44: GradioUnusedKwargWarning: You have unused kwarg parameters in Textbox, please remove them: {'editable': False, 'scrollbars': True}
+2023-12-17 21:20:30 | ERROR | stderr |   return loop.run_until_complete(main)
+2023-12-17 21:20:39 | INFO | gradio_web_server | add_text. ip: 127.0.0.1. len: 33
+2023-12-17 21:20:39 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/asyncio/runners.py:44: GradioUnusedKwargWarning: You have unused kwarg parameters in Button, please remove them: {'mode': 'static'}
+2023-12-17 21:20:39 | ERROR | stderr |   return loop.run_until_complete(main)
+2023-12-17 21:20:40 | INFO | gradio_web_server | http_bot. ip: 127.0.0.1
+2023-12-17 21:20:40 | INFO | gradio_web_server | model_name: llava-llama-2-13b-chat-lightning-preview, worker_addr: http://localhost:40000
+2023-12-17 21:20:40 | INFO | gradio_web_server | {"Key:prompt\n\t: Value[INST] <<SYS>>\nYou are a helpful language and vision assistant. You are able to understand the visual content that the user provides, and assist the user with a variety of tasks using natural language.\n<</SYS>>\n\n<image>\nWhat is unusual about this image? [/INST]\n\tType:<class 'str'>", "Key:model\n\t: Valuellava-llama-2-13b-chat-lightning-preview\n\tType:<class 'str'>", "Key:max_new_tokens\n\t: Value512\n\tType:<class 'int'>", "Key:stop\n\t: Value</s>\n\tType:<class 'str'>", "Key:top_p\n\t: Value0.7\n\tType:<class 'float'>", "Key:temperature\n\t: Value0.2\n\tType:<class 'float'>", "Key:images\n\t: ValueList of 1 images: ['b939abf2c4553ce07e642170aee3a3d7']\n\tType:<class 'str'>"}
+2023-12-17 21:20:40 | INFO | gradio_web_server | ==== request ====
+{'model': 'llava-llama-2-13b-chat-lightning-preview', 'prompt': '[INST] <<SYS>>\nYou are a helpful language and vision assistant. You are able to understand the visual content that the user provides, and assist the user with a variety of tasks using natural language.\n<</SYS>>\n\n<image>\nWhat is unusual about this image? [/INST]', 'temperature': 0.2, 'top_p': 0.7, 'max_new_tokens': 512, 'stop': '</s>', 'images': "List of 1 images: ['b939abf2c4553ce07e642170aee3a3d7']"}
+2023-12-17 21:20:47 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/asyncio/runners.py:44: GradioUnusedKwargWarning: You have unused kwarg parameters in Button, please remove them: {'mode': 'dynamic'}
+2023-12-17 21:20:47 | ERROR | stderr |   return loop.run_until_complete(main)
+2023-12-17 21:20:47 | INFO | gradio_web_server | The unusual aspect of this image is the man standing on top of a yellow car, holding a clothes iron. This is an unconventional and unexpected scene, as people typically do not stand on top of cars, especially while holding an iron. The presence of a yellow taxi cab in the background further adds to the unusual nature of the scene.
+2023-12-17 21:20:58 | INFO | gradio_web_server | add_text. ip: 127.0.0.1. len: 65
+2023-12-17 21:20:58 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/asyncio/runners.py:44: GradioUnusedKwargWarning: You have unused kwarg parameters in Button, please remove them: {'mode': 'static'}
+2023-12-17 21:20:58 | ERROR | stderr |   return loop.run_until_complete(main)
+2023-12-17 21:20:58 | INFO | gradio_web_server | http_bot. ip: 127.0.0.1
+2023-12-17 21:20:58 | INFO | gradio_web_server | model_name: llava-llama-2-13b-chat-lightning-preview, worker_addr: http://localhost:40000
+2023-12-17 21:20:58 | INFO | gradio_web_server | {"Key:model\n\t: Valuellava-llama-2-13b-chat-lightning-preview\n\tType:<class 'str'>", "Key:images\n\t: ValueList of 1 images: ['52b64b78584b687fa01c14fbac944d6f']\n\tType:<class 'str'>", "Key:max_new_tokens\n\t: Value512\n\tType:<class 'int'>", "Key:stop\n\t: Value</s>\n\tType:<class 'str'>", "Key:prompt\n\t: Value[INST] <<SYS>>\nYou are a helpful language and vision assistant. You are able to understand the visual content that the user provides, and assist the user with a variety of tasks using natural language.\n<</SYS>>\n\n<image>\nWhat are the things I should be cautious about when I visit here? [/INST]\n\tType:<class 'str'>", "Key:top_p\n\t: Value0.7\n\tType:<class 'float'>", "Key:temperature\n\t: Value0.2\n\tType:<class 'float'>"}
+2023-12-17 21:20:58 | INFO | gradio_web_server | ==== request ====
+{'model': 'llava-llama-2-13b-chat-lightning-preview', 'prompt': '[INST] <<SYS>>\nYou are a helpful language and vision assistant. You are able to understand the visual content that the user provides, and assist the user with a variety of tasks using natural language.\n<</SYS>>\n\n<image>\nWhat are the things I should be cautious about when I visit here? [/INST]', 'temperature': 0.2, 'top_p': 0.7, 'max_new_tokens': 512, 'stop': '</s>', 'images': "List of 1 images: ['52b64b78584b687fa01c14fbac944d6f']"}
+2023-12-17 21:21:07 | ERROR | stderr | /opt/conda/envs/dl/lib/python3.10/asyncio/runners.py:44: GradioUnusedKwargWarning: You have unused kwarg parameters in Button, please remove them: {'mode': 'dynamic'}
+2023-12-17 21:21:07 | ERROR | stderr |   return loop.run_until_complete(main)
+2023-12-17 21:21:07 | INFO | gradio_web_server | When visiting the dock on the lake, there are a few things you should be cautious about. First, be aware of the water conditions, as the lake appears to be calm and clear, but sudden changes in weather or water currents can pose risks. Second, be mindful of the wooden dock's structural integrity, as it may be subject to wear and tear or damage over time. Lastly, be cautious of any potential wildlife or aquatic hazards, such as slippery surfaces or hidden obstacles, to ensure a safe and enjoyable experience.
+2023-12-18 01:07:27 | INFO | stdout | Keyboard interruption in main thread... closing server.
+2023-12-18 01:08:31 | INFO | stdout | Keyboard interruption in main thread... closing server.

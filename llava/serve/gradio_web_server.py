@@ -20,9 +20,9 @@ logger = build_logger("gradio_web_server", "gradio_web_server.log")
 
 headers = {"User-Agent": "EmPBot:: Client"}
 
-no_change_btn = gr.Button.update()
-enable_btn = gr.Button.update(interactive=True)
-disable_btn = gr.Button.update(interactive=False)
+no_change_btn = gr.Button
+enable_btn = gr.Button(interactive=True)
+disable_btn = gr.Button(interactive=False)
 
 priority = {
     "vicuna-13b": "aaaaaaa",
@@ -63,35 +63,35 @@ def load_demo(url_params, request: gr.Request):
     """
     logger.info(f"load_demo. ip: {request.client.host}. params: {url_params}")
 
-    dropdown_update = gr.Dropdown.update(visible=True)
+    dropdown_update = gr.Dropdown(visible=True)
     if "model" in url_params:
         model = url_params["model"]
         if model in models:
-            dropdown_update = gr.Dropdown.update(
+            dropdown_update = gr.Dropdown(
                 value=model, visible=True)
     # Initialize state as a conversation object
     state = default_conversation.copy()
     return (state,
             dropdown_update,
-            gr.Chatbot.update(visible=True),
-            gr.Textbox.update(visible=True),
-            gr.Button.update(visible=True),
-            gr.Row.update(visible=True),
-            gr.Accordion.update(visible=True))
+            gr.Chatbot(visible=True),
+            gr.Textbox(visible=True),
+            gr.Button(visible=True),
+            gr.Row(visible=True),
+            gr.Accordion(visible=True))
 
 
 def load_demo_refresh_model_list(request: gr.Request):
     logger.info(f"load_demo. ip: {request.client.host}")
     models = get_model_list()
     state = default_conversation.copy()
-    return (state, gr.Dropdown.update(
+    return (state, gr.Dropdown(
                choices=models,
                value=models[0] if len(models) > 0 else ""),
-            gr.Chatbot.update(visible=True),
-            gr.Textbox.update(visible=True),
-            gr.Button.update(visible=True),
-            gr.Row.update(visible=True),
-            gr.Accordion.update(visible=True))
+            gr.Chatbot(visible=True),
+            gr.Textbox(visible=True),
+            gr.Button(visible=True),
+            gr.Row(visible=True),
+            gr.Accordion(visible=True))
 
 
 def vote_last_response(state, vote_type, model_selector, request: gr.Request):
@@ -154,7 +154,7 @@ def add_text(state, text, image, image_process_mode, request: gr.Request):
             state.skip_next = True
             return (state, state.to_gradio_chatbot(), moderation_msg, None) + (
                 no_change_btn,) * 5
-
+            
     text = text[:1536]  # Hard cut-off
     if image is not None:
         text = text[:1200]  # Hard cut-off for images
@@ -166,7 +166,7 @@ def add_text(state, text, image, image_process_mode, request: gr.Request):
         text = (text, image, image_process_mode)
         if len(state.get_images(return_pil=True)) > 0:
             state = default_conversation.copy()
-    
+               
     state.append_message(state.roles[0], text)
     state.append_message(state.roles[1], None)
     state.skip_next = False
@@ -348,12 +348,12 @@ def build_demo(embed_mode):
         visible=True, container=False)
     contextbox = gr.Textbox(
         show_label=False, placeholder="Extraction Pipeline", 
-        visible=True, container=False, editable=False, scrollbars=True)
+        visible=True, container=False, interactive=False, autoscroll=True)
     audiobox = gr.Textbox(
         show_label=False, placeholder="Audio will show here", 
-        visible=True, container=False, editable=False, scrollbars=True)
+        visible=True, container=False, interactive=False, autoscroll=True)
     audiorecorder = gr.Audio(
-        source="microphone", label='Recorder')
+        sources=["microphone"], label='Recorder')
     # [Definition: Demo Application]
     with gr.Blocks(title="EmPBot::", theme=gr.themes.Base()) as demo:
         state = gr.State()
@@ -370,7 +370,7 @@ def build_demo(embed_mode):
                         interactive=True,
                         show_label=False,
                         container=False)
-                videobox = gr.Video(source='upload', format='mp4')
+                videobox = gr.Video(sources=['upload'], format='mp4')
                 imagebox = gr.Image(type="pil")
                 image_process_mode = gr.Radio(
                     ["Crop", "Resize", "Pad"],
@@ -395,10 +395,10 @@ def build_demo(embed_mode):
                     with gr.Column(scale=2):
                         urlbox.render()
                         audiorecorder.render()
-                    with gr.Column(scale=4, min_width=70, min_height=250):
-                        with gr.Row(scale=1):
+                    with gr.Column(scale=4, min_width=70):
+                        with gr.Row():
                             contextbox.render()
-                        with gr.Row(scale=1):
+                        with gr.Row():
                             audiobox.render()
                     with gr.Column(scale=1, min_width=40):
                         submit_btn = gr.Button(value="Submit", visible=False)
@@ -406,7 +406,7 @@ def build_demo(embed_mode):
                     upvote_btn = gr.Button(value="👍  Upvote", interactive=False)
                     downvote_btn = gr.Button(value="👎  Downvote", interactive=False)
                     flag_btn = gr.Button(value="⚠️  Flag", interactive=False)
-                    #stop_btn = gr.Button(value="⏹️  Stop Generation", interactive=False)
+                    stop_btn = gr.Button(value="⏹️  Stop Generation", interactive=False)
                     regenerate_btn = gr.Button(value="🔄  Regenerate", interactive=False)
                     clear_btn = gr.Button(value="🗑️  Clear history", interactive=False)
 
@@ -468,7 +468,7 @@ if __name__ == "__main__":
     parser.add_argument("--concurrency-count", type=int, default=8)
     parser.add_argument("--model-list-mode", type=str, default="once",
         choices=["once", "reload"])
-    parser.add_argument("--share", action="store_true")
+    parser.add_argument("--share", default=True, action="store_true")
     parser.add_argument("--moderate", action="store_true")
     parser.add_argument("--embed", action="store_true")
     args = parser.parse_args()
@@ -479,6 +479,9 @@ if __name__ == "__main__":
     logger.info(args)
     demo = build_demo(args.embed)
     demo.queue(
-        concurrency_count=args.concurrency_count, status_update_rate=15,
-               api_open=True).launch(
-        server_name=args.host, server_port=args.port, share=args.share, debug=True)
+        status_update_rate=15, api_open=True
+        ).launch(
+            server_name=args.host, server_port=args.port, share=args.share, debug=True, max_threads=args.concurrency_count, 
+            auth=("ezout-admin", "ezout_admin"), show_api=True
+    )
+
