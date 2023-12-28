@@ -306,7 +306,29 @@ def build_app(args=None, model_list):
     # Worker Endpoint
     @app.post("/recommend")
     async def generate_stream(request: Request):
-        
+    
+    # Worker Endpoint
+    @app.post("/worker_generate_stream")
+    async def generate_stream(request: Request):
+        global model_semaphore, global_counter
+        global_counter += 1
+        params = await request.json()
+
+        if model_semaphore is None:
+            model_semaphore = asyncio.Semaphore(
+                args.limit_model_concurrency)
+        await model_semaphore.acquire()
+        worker.send_heart_beat()
+        generator = worker.generate_stream_gate(params)
+        background_tasks = BackgroundTasks()
+        background_tasks.add_task(partial(release_model_semaphore, fn=worker.send_heart_beat))
+        return StreamingResponse(generator, background=background_tasks)
+
+
+    @app.post("/worker_get_status")
+    async def get_status(request: Request):
+        return worker.get_status()
+    
     # urlbox = gr.Textbox(
     #     show_label=False, placeholder="Enter your URL and press ENTER", 
     #     visible=True, container=False)

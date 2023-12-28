@@ -92,6 +92,9 @@ In [llava.conversation.py](../conversation.py) provides
   
   * ```to_gradio_chatbot```:  KEY processing function of Input Payload
   * the base prompts for initializing and connecting between prompts.
+
+# Development [current development]
+The API service handler is exposed at [`gradio_web_api.py`](gradio_web_api.py)
   
 # Key Doc Reference
 
