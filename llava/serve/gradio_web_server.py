@@ -380,8 +380,8 @@ def build_demo(embed_mode):
                 cur_dir = os.path.dirname(os.path.abspath(__file__))
                 # Example Input : <str> + <PIL.Image>
                 gr.Examples(examples=[
-                    [f"{cur_dir}/examples/extreme_ironing.jpg", "What is unusual about this image?"],
-                    [f"{cur_dir}/examples/waterview.jpg", "What are the things I should be cautious about when I visit here?"],
+                    [f"{cur_dir}/examples/empty_basket.jpg", "Is this basket empty or not? What belongs in this basket?"],
+                    [f"{cur_dir}/examples/fruit_basket.png", "Given what the person has put in the following basket, what is the best next item to get?"],
                 ], inputs=[imagebox, audiobox])
 
                 with gr.Accordion("Parameters", open=False, visible=False) as parameter_row:
